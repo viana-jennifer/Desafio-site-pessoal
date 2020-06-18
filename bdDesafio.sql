@@ -1,10 +1,11 @@
 create database DesafioIndividual;
 use DesafioIndividual;
 
-create table tbLogin(
+create table Usuario(
 	id int primary key auto_increment,
-    Login varchar(10),
-    Senha varchar(20)
+    nome varchar(45),
+    login varchar(10),
+    senha varchar(20)
     );
 
 select * from tbLogin;
