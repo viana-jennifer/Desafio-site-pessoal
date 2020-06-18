@@ -1,0 +1,333 @@
+:root {
+    --color-primary: #05a1d2;
+    --color-secundary: #ea1c81;
+    --color-terciary:#715b8c ;
+    --color-backgrounds: #ffffff;  
+    --color-black: #232323;    
+    --branco-escuro: #f4f4f4;
+    --color-terciary2: #551a8b;
+}
+
+/*GLOBAL*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--branco-escuro);
+    font-size: 15px;
+    line-height: 1.5; /*Espaçamento*/
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /*Adiciona barra de rolagem quando o texto for muito grande*/
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    margin-right: 70px;
+}
+
+button{
+    border: none;
+}
+
+a{
+    text-decoration: none; /* Tira o sublinhado dos links*/
+}
+
+.back-purple{
+    background-color: var(--color-terciary);
+}
+.back-pink{
+    background-color: var(--color-secundary);
+}
+.back-blue{
+    background-color: var(--color-primary);
+}
+
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+    color: var(--color-backgrounds);
+    background-color: var(--color-primary);
+    padding: 20px;
+    margin-top: 88px;
+}
+
+/* CABEÇALHO */
+.header{
+    background-color: var(--color-backgrounds);
+    color: var(--color-primary);
+    min-height: 70px;
+    border-bottom: var(--color-primary) 3px solid;
+    
+}
+
+.header a{
+    color: var(--color-black);
+    text-transform: uppercase; /*Texto inteiro em caixa alta*/
+    font-size: 16px;
+}
+
+.header li{
+    float: left;
+    display: inline; /*Elementos vão ocupar uma linha e NÃO irão se sobrepor*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header button{
+    background-color: var(--color-secundary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header button a{
+    color: var(--color-backgrounds);
+}
+
+button a{
+    color: var(--color-backgrounds);
+}
+
+.header .title-header{
+    float: left; /*Se não for colocado, o elemento ocupa uma linha completa*/
+}
+
+.header .current a{
+    color: var(--color-teciary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.nav {
+    float: right;
+    margin-top: 30px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*SHOWCASE*/
+
+    /*INDEX*/
+
+
+.showcase{
+    background: url('../img/binaural-beats.jpg') no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    text-align: center;
+    color: var(--color-backgrounds);
+    border-bottom: var(--color-primary) 3px solid;
+}
+
+.showcase h1{
+    font-size: 55px;
+    margin-top: 90px;
+}
+
+.showcase p{
+    font-size: 30px;
+}
+
+.summary{
+    padding: 60px;
+}
+
+.summary h2{
+    text-align: center;
+    padding: 20px;
+    color: var(--color-secundary);
+    background-color: var(--color-backgrounds);
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+.summary .summary-item{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 18px;
+    color: var(--color-backgrounds);
+}
+
+.summary img{
+    width: 90px;
+}
+    /*Login*/
+.showcase .box-login{
+    background-color: #ffffffcc;
+    width: 50%;
+    margin:auto;
+    border-radius: 50px;
+}
+
+.showcase .box-login h1{
+    color: var(--color-black);
+    padding-top: 20px;
+    font-size: 20px;
+    color: var(--color-secundary);
+    text-transform: none ;
+}
+
+.showcase .box-login input{
+    width: 50%;
+    height: 20px;
+}
+.showcase .box-login label .text-login{
+    color: var(--color-secundary);
+    text-align: left;
+    margin-left: 25%;
+    font-weight: bold;
+}
+.showcase .box-login button{
+    background-color: var(--color-secundary);
+    color: var(--color-backgrounds);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 50%;
+}
+/*------------------------------------------------------------------------------------------------------*/
+
+/*CADASTRO*/
+.cadastro{
+    margin-top: 20px;
+    width: 35%;
+    margin-left: 32.5%;
+    background-color: var(--color-backgrounds);
+    align-items: center;
+    border-radius: 50px;
+    border: var(--color-secundary) 3px solid;
+}
+
+.cadastro input{
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border-color: var(--color-backgrounds);
+}
+
+.cadastro form .button-class{
+    padding:10px;
+    padding-bottom: 25px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    margin-left: 35%;
+    background-color: var(--color-primary);
+    color: var(--color-backgrounds);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 30%;
+}
+
+.cadastro .formulario h1{
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*CONTENT*/
+    
+    /*BINAURAL BEATS*/
+
+.content p{
+    font-size: 20px;
+}
+
+.content h2{
+    color: var(--color-terciary2);
+}
+
+.content .title-page{
+    text-align: center;
+    background-color: var(--color-backgrounds);
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    border-radius: 50px;
+    color: var(--color-secundary    );
+}
+
+.content .box1{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    text-align: justify;
+}
+.content .box1 .campo-1{
+    float: left;
+    width: 40%;
+}
+
+.content .box1 img{
+    float: right;
+    width: 50%;
+    border: var(--color-backgrounds) solid 3px;
+}
+
+.content .box2{
+    width: 100%;
+    min-height: 250px;
+}
+
+.content .box2 .campo{
+    float: left;
+    width: 30%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.content .box2 p{
+    text-align: justify;
+}
+
+.content .box3{
+    width: 100%;
+    display:flex;
+}
+
+.content .box3 .beat{
+    width: 15%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.content .title-beats{
+    color: var(--color-backgrounds);
+    margin-bottom: 0;
+}
+
+.content .box3 .freq-beats{
+    color: var(--color-backgrounds);
+    margin-top: 0;
+}
